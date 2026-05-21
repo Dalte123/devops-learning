@@ -16,3 +16,13 @@ Today I practiced:
 ## Why this matters
 
 Git and GitHub help me document my learning and build public proof of my DevOps skills.
+
+## Git workflow I practiced
+
+The basic Git workflow is:
+
+1. Edit files
+2. Check status
+3. Stage changes
+4. Commit changes
+5. Push to GitHub
