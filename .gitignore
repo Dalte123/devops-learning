@@ -1,0 +1,21 @@
+# Environment variables and secrets
+.env
+*.key
+*.pem
+*.env
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache if used later
+__pycache__/
+*.pyc
