@@ -1,53 +1,34 @@
-# DevOps Learning Repo
+## Session 8 — Bash Scripting Fundamentals
 
-This repository documents my hands-on DevOps learning journey.
+In this session, I practiced creating and running Bash scripts. I learned how to use `chmod +x` to make scripts executable, how to use `echo`, comments, variables, simple `if` statements, and exit codes. I built a beginner system-check script that prints the current user, date, uptime, memory usage, disk usage, and internet connectivity status.
 
-## Session 6: Git and GitHub Fundamentals
+### Commands practiced
 
-Today I practiced:
+- `nano script.sh`
+- `bash script.sh`
+- `./script.sh`
+- `chmod +x script.sh`
+- `echo`
+- variables
+- comments
+- `if` statements
+- `echo $?`
+- `date`
+- `whoami`
+- `uptime`
+- `free -h`
+- `df -h`
+- `ping -c 3`
+- `git status`
+- `git add`
+- `git commit`
+- `git push`
 
-- Creating a local Git repository
-- Checking file status
-- Staging files
-- Committing changes
-- Viewing commit history
-- Preparing to push work to GitHub
+### What I built
 
-## Why this matters
+I created a `scripts/` folder and added beginner Bash scripts, including a `system-check.sh` script for basic Linux system checks.
 
-Git and GitHub help me document my learning and build public proof of my DevOps skills.
+### What I learned
 
-## Git workflow I practiced
+I learned that Bash scripts are useful for automating repeated Linux commands. I also learned that `bash script.sh` runs a script through Bash, while `./script.sh` runs it directly and requires execute permission.
 
-The basic Git workflow is:
-
-1. Edit files
-2. Check status
-3. Stage changes
-4. Commit changes
-5. Push to GitHub
-
-## Session 6 Reflection
-
-Today I learned the basic Git and GitHub workflow.
-
-Git is used to track changes in files over time. GitHub is used to store repositories online and share work publicly.
-
-The main workflow I practiced was:
-
-1. Create or edit files
-2. Check changes with git status
-3. Stage files with git add
-4. Save a checkpoint with git commit
-5. Push work to GitHub with git push
-
-Important concepts I learned:
-
-- A repository is a project tracked by Git.
-- An untracked file is a file Git sees but is not tracking yet.
-- Staging means preparing a file for commit.
-- A commit is a saved snapshot.
-- Origin is the nickname for the remote GitHub repository.
-- Main is the default branch where the main work lives.
-
-This matters for DevOps because infrastructure code, scripts, documentation, Docker files, Terraform files, Kubernetes YAML, and CI/CD pipelines are usually stored in Git repositories.
