@@ -328,3 +328,28 @@ git commit -m "Add Session 6 Git fundamentals notes"
 git commit -m "Add Session 7 branch and gitignore notes"
 git commit -m "Add Session 8 Bash scripting notes"
 git commit -m "Document GitHub SSH authentication setup"
+
+---
+
+## Session 10 — Bash Script Safety, Environment Variables, and .gitignore
+
+In this session, I learned how `.gitignore` helps prevent sensitive or unnecessary files from being committed to Git. I practiced creating a `.env` file for local configuration and a safe `.env.example` file with placeholder values. I also created a Bash script that reads an environment variable and exits safely if the variable is missing.
+
+Security lesson:
+
+I learned that real secrets such as tokens, passwords, API keys, and private keys should never be committed to GitHub or pasted into AI tools. Configuration should be separated from secrets, and sensitive files like `.env` should be ignored.
+
+Commands practiced:
+
+- `nano .gitignore`
+- `touch .env`
+- `nano .env.example`
+- `export APP_ENV=dev`
+- `echo $APP_ENV`
+- `printenv`
+- `chmod +x scripts/check-env.sh`
+- `./scripts/check-env.sh`
+- `git status`
+- `git add`
+- `git commit`
+- `git push`

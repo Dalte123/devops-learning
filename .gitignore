@@ -3,6 +3,8 @@
 *.key
 *.pem
 *.env
+.env.*
+!.env.example
 
 # Logs
 *.log
@@ -11,6 +13,8 @@ logs/
 # Temporary files
 *.tmp
 *.swp
+tmp/
+temp/
 
 # OS files
 .DS_Store
@@ -19,3 +23,7 @@ Thumbs.db
 # Python cache if used later
 __pycache__/
 *.pyc
+
+# Editor files
+.vscode/
+.idea/
