@@ -19,6 +19,7 @@ My goal is to become employable in DevOps / Cloud / Infrastructure by building p
 | Session 7 | Git Branches, `.gitignore`, and Documentation | Completed |
 | Session 8 | Bash Scripting Fundamentals | Completed |
 | Session 9 | GitHub Authentication with SSH | Completed |
+| Session 10 | Bash Script Safety, Environment Variables, and `.gitignore` | Completed |
 
 ---
 
@@ -299,50 +300,17 @@ This is important for DevOps because engineers often work with private repositor
 
 ---
 
-## GitHub Portfolio Habit
+## Session 10 — Bash Script Safety, Environment Variables, and `.gitignore`
 
-For every session, I aim to document:
+In this session, I learned how to write safer Bash scripts and how to avoid committing sensitive files to GitHub.
 
-- What I practiced
-- What commands I used
-- What I learned
-- Why it matters for employment
-- Any scripts, notes, or configuration files created
-- Clean commit messages
+This session built directly on Session 9. In Session 9, I learned not to store GitHub tokens in scripts. In Session 10, I learned how `.gitignore`, environment variables, and `.env` files are used to separate configuration from code.
 
-The goal of this repo is to show consistent hands-on learning and professional GitHub habits.
-
----
-
-## Clean Commit Message Examples
-
-Good commit messages:
-
-```bash
-git commit -m "Add Session 1 Linux navigation notes"
-git commit -m "Add Session 2 file viewing and search notes"
-git commit -m "Add Session 3 Linux permissions notes"
-git commit -m "Add Session 4 process monitoring notes"
-git commit -m "Add Session 5 networking fundamentals notes"
-git commit -m "Add Session 6 Git fundamentals notes"
-git commit -m "Add Session 7 branch and gitignore notes"
-git commit -m "Add Session 8 Bash scripting notes"
-git commit -m "Document GitHub SSH authentication setup"
-
----
-
-## Session 10 — Bash Script Safety, Environment Variables, and .gitignore
-
-In this session, I learned how `.gitignore` helps prevent sensitive or unnecessary files from being committed to Git. I practiced creating a `.env` file for local configuration and a safe `.env.example` file with placeholder values. I also created a Bash script that reads an environment variable and exits safely if the variable is missing.
-
-Security lesson:
-
-I learned that real secrets such as tokens, passwords, API keys, and private keys should never be committed to GitHub or pasted into AI tools. Configuration should be separated from secrets, and sensitive files like `.env` should be ignored.
-
-Commands practiced:
+### Commands practiced
 
 - `nano .gitignore`
 - `touch .env`
+- `nano .env`
 - `nano .env.example`
 - `export APP_ENV=dev`
 - `echo $APP_ENV`
@@ -353,3 +321,58 @@ Commands practiced:
 - `git add`
 - `git commit`
 - `git push`
+
+### Files created or changed
+
+- `.gitignore`
+- `.env`
+- `.env.example`
+- `scripts/check-env.sh`
+- `sessions/session-10-bash-script-safety-env-gitignore.md`
+- `README.md`
+
+### What I learned
+
+I learned:
+
+- `.gitignore` tells Git which files to ignore
+- `.env` files are commonly used for local environment variables
+- `.env` files can contain sensitive values and should not be committed
+- `.env.example` is safe to commit because it only contains placeholder values
+- Environment variables allow scripts to use configuration without hardcoding secrets
+- Bash scripts should check whether required variables exist before continuing
+- `git status` should be checked before every commit to avoid accidentally committing sensitive files
+
+### Security lesson
+
+I learned that real secrets should never be committed to GitHub.
+
+Examples of secrets include:
+
+- Passwords
+- API keys
+- GitHub tokens
+- Private SSH keys
+- Cloud access keys
+- Database credentials
+- Secret `.env` files
+
+A safe pattern is:
+
+- Keep real secrets in `.env`
+- Add `.env` to `.gitignore`
+- Commit `.env.example` with fake placeholder values
+- Use environment variables inside scripts
+- Check `git status` before committing
+
+### Example `.gitignore` lesson
+
+The `.gitignore` file can protect sensitive or unnecessary files from being tracked by Git.
+
+Example:
+
+```bash
+.env
+*.log
+__pycache__/
+node_modules/
