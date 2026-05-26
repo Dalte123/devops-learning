@@ -20,6 +20,7 @@ My goal is to become employable in DevOps / Cloud / Infrastructure by building p
 | Session 8 | Bash Scripting Fundamentals | Completed |
 | Session 9 | GitHub Authentication with SSH | Completed |
 | Session 10 | Bash Script Safety, Environment Variables, and `.gitignore` | Completed |
+| Session 11 | Bash Arguments, User Input, and Safer Script Execution | Completed |
 
 ---
 
@@ -376,3 +377,25 @@ Example:
 *.log
 __pycache__/
 node_modules/
+
+## Session 11 — Bash Arguments, User Input, and Safer Script Execution
+
+In this session, I practiced writing Bash scripts that accept command-line arguments and safely validate user input.
+
+### What I practiced
+- `$1` for the first argument
+- `$2` for the second argument
+- `$@` for all arguments
+- `read -p` for interactive user input
+- checking missing arguments
+- writing usage messages
+- using `case` statements
+- using `exit 1` for safe script failure
+- creating files with Bash scripts
+- preventing accidental file overwrite
+
+### Mini-project
+I created:
+
+```bash
+scripts/create-session-file.sh
