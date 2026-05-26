@@ -370,6 +370,8 @@ A safe pattern is:
 
 The `.gitignore` file can protect sensitive or unnecessary files from being tracked by Git.
 
+## Session 11 — Bash Arguments, User Input, and Safer Script Execution
+
 Example:
 
 ```bash
@@ -378,7 +380,6 @@ Example:
 __pycache__/
 node_modules/
 
-## Session 11 — Bash Arguments, User Input, and Safer Script Execution
 
 In this session, I practiced writing Bash scripts that accept command-line arguments and safely validate user input.
 
