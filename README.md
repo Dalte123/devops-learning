@@ -372,7 +372,6 @@ The `.gitignore` file can protect sensitive or unnecessary files from being trac
 
 ## Session 11 — Bash Arguments, User Input, and Safer Script Execution
 
-Example:
 
 ```bash
 .env
