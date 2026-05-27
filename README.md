@@ -370,19 +370,27 @@ A safe pattern is:
 
 The `.gitignore` file can protect sensitive or unnecessary files from being tracked by Git.
 
-## Session 11 — Bash Arguments, User Input, and Safer Script Execution
-
+Example:
 
 ```bash
 .env
 *.log
 __pycache__/
 node_modules/
+```
 
+### Employment connection
+
+This session helped me understand safer scripting habits, environment variables, and secret protection. These are important in DevOps because engineers often work with credentials, cloud keys, config files, and automation scripts.
+
+---
+
+## Session 11 — Bash Arguments, User Input, and Safer Script Execution
 
 In this session, I practiced writing Bash scripts that accept command-line arguments and safely validate user input.
 
 ### What I practiced
+
 - `$1` for the first argument
 - `$2` for the second argument
 - `$@` for all arguments
@@ -395,18 +403,67 @@ In this session, I practiced writing Bash scripts that accept command-line argum
 - preventing accidental file overwrite
 
 ### Mini-project
+
 I created:
 
 ```bash
 scripts/create-session-file.sh
+```
 
-## Session 12 — Bash Case Statements and DevOps Helper Script
+### What I learned
 
-In this session, I learned how to use Bash case statements to build command-style scripts.
+I learned how Bash scripts can accept input from the command line and use that input to perform actions.
 
-I created a script called `devops-helper.sh` that accepts options like `help`, `status`, `disk`, `memory`, and `logs`.
+I also learned how to make scripts safer by checking for missing arguments, showing usage messages, and avoiding accidental file overwrites.
 
-This helped me understand how Bash scripts can become more user-friendly and organized.
+### Employment connection
+
+This is useful in DevOps because many automation scripts accept arguments, validate input, and run different actions depending on what the user provides.
+
+---
+
+## Session 12 — Bash Case Statements, Script Menus, and Command Options
+
+In this session, I learned how to use Bash `case` statements to build command-style scripts.
+
+### What I practiced
+
+- `case` statements
+- `esac`
+- `$1` command-line arguments
+- `;;` inside case blocks
+- help/usage messages
+- invalid command handling
+- `exit 1`
+- `df -h`
+- `free -h`
+- `uptime`
+- `journalctl`
+- making scripts executable with `chmod +x`
+
+### Mini-project
+
+I created:
+
+```bash
+scripts/devops-helper.sh
+```
+
+The script accepts options like:
+
+```bash
+./scripts/devops-helper.sh help
+./scripts/devops-helper.sh status
+./scripts/devops-helper.sh disk
+./scripts/devops-helper.sh memory
+./scripts/devops-helper.sh logs
+```
+
+### What I learned
+
+I learned how to make Bash scripts more organized and user-friendly by using command options.
+
+Instead of creating multiple scripts for different checks, I built one helper script that runs different actions based on the option provided.
 
 ### DevOps connection
 
@@ -414,15 +471,10 @@ This script automates common system-check commands and gives me practice buildin
 
 It also shows how scripts can safely handle user input and invalid options.
 
-### Commands practiced
+### Employment connection
 
-- chmod +x scripts/devops-helper.sh
-- ./scripts/devops-helper.sh help
-- ./scripts/devops-helper.sh status
-- ./scripts/devops-helper.sh disk
-- ./scripts/devops-helper.sh memory
-- ./scripts/devops-helper.sh logs
-- git status
-- git add
-- git commit
-- git push
+This session shows that I can write basic Bash automation, understand command options, use `case` statements, and build simple operational helper scripts.
+
+### Status
+
+Completed
