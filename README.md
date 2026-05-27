@@ -21,7 +21,7 @@ My goal is to become employable in DevOps / Cloud / Infrastructure by building p
 | Session 9 | GitHub Authentication with SSH | Completed |
 | Session 10 | Bash Script Safety, Environment Variables, and `.gitignore` | Completed |
 | Session 11 | Bash Arguments, User Input, and Safer Script Execution | Completed |
-
+| Session 12 | Bash Case Statements, Script Menus, and Command Options | Completed |
 ---
 
 ## Session Summaries
@@ -400,3 +400,30 @@ I created:
 
 ```bash
 scripts/create-session-file.sh
+
+## Session 12 — Bash Case Statements and DevOps Helper Script
+
+In this session, I learned how to use Bash case statements to build command-style scripts.
+
+I created a script called `devops-helper.sh` that accepts options like `help`, `status`, `disk`, `memory`, and `logs`.
+
+This helped me understand how Bash scripts can become more user-friendly and organized.
+
+### DevOps connection
+
+This script automates common system-check commands and gives me practice building simple operational tools.
+
+It also shows how scripts can safely handle user input and invalid options.
+
+### Commands practiced
+
+- chmod +x scripts/devops-helper.sh
+- ./scripts/devops-helper.sh help
+- ./scripts/devops-helper.sh status
+- ./scripts/devops-helper.sh disk
+- ./scripts/devops-helper.sh memory
+- ./scripts/devops-helper.sh logs
+- git status
+- git add
+- git commit
+- git push
