@@ -22,6 +22,7 @@ My goal is to become employable in DevOps / Cloud / Infrastructure by building p
 | Session 10 | Bash Script Safety, Environment Variables, and `.gitignore` | Completed |
 | Session 11 | Bash Arguments, User Input, and Safer Script Execution | Completed |
 | Session 12 | Bash Case Statements, Script Menus, and Command Options | Completed |
+| Session 13 | Bash Functions, Reusable Code, and Script Cleanup | Completed |
 ---
 
 ## Session Summaries
@@ -478,3 +479,25 @@ This session shows that I can write basic Bash automation, understand command op
 ### Status
 
 Completed
+
+## Session 13 — Bash Functions and Script Cleanup
+
+In this session, I learned how to use Bash functions to make scripts cleaner and easier to maintain. I improved my `devops-helper.sh` script by organizing the help, status, disk, memory, and logs commands into separate functions.
+
+DevOps connection:
+
+Functions help make automation scripts easier to read, reuse, troubleshoot, and maintain. This is important because DevOps scripts often grow over time and need to stay understandable for other engineers.
+
+Commands practiced:
+
+```bash
+chmod +x scripts/devops-helper.sh
+./scripts/devops-helper.sh help
+./scripts/devops-helper.sh status
+./scripts/devops-helper.sh disk
+./scripts/devops-helper.sh memory
+./scripts/devops-helper.sh logs
+git status
+git add
+git commit
+git push
