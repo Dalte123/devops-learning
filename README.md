@@ -23,6 +23,7 @@ My goal is to become employable in DevOps / Cloud / Infrastructure by building p
 | Session 11 | Bash Arguments, User Input, and Safer Script Execution | Completed |
 | Session 12 | Bash Case Statements, Script Menus, and Command Options | Completed |
 | Session 13 | Bash Functions, Reusable Code, and Script Cleanup | Completed |
+| Session 14 | Bash Loops, Repeated Checks, and Simple Automation | Completed |
 ---
 
 ## Session Summaries
@@ -501,3 +502,22 @@ git status
 git add
 git commit
 git push
+
+## Session 14 — Bash Loops, Repeated Checks, and Simple Automation
+
+In this session, I learned how to use Bash loops to automate repeated checks.
+
+I practiced:
+
+- `for` loops
+- `while` loops
+- repeated command execution
+- avoiding infinite loops
+- saving output to report files
+- using `>` and `>>`
+- checking Git status inside a script
+
+I created a script called:
+
+```bash
+scripts/system-report.sh
