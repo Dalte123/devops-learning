@@ -24,6 +24,7 @@ My goal is to become employable in DevOps / Cloud / Infrastructure by building p
 | Session 12 | Bash Case Statements, Script Menus, and Command Options | Completed |
 | Session 13 | Bash Functions, Reusable Code, and Script Cleanup | Completed |
 | Session 14 | Bash Loops, Repeated Checks, and Simple Automation | Completed |
+| Session 15 | Bash Exit Codes, Script Results, and Error Handling | Completed |
 ---
 
 ## Session Summaries
@@ -522,3 +523,44 @@ I created a script called:
 
 ```bash
 scripts/system-report.sh
+```
+
+# Session 15 — Bash Exit Codes and Error Handling
+
+## What I learned
+
+In this session, I learned how Bash uses exit codes to show whether commands succeed or fail. I practiced checking `$?`, using `exit 0` and `exit 1`, and printing clear PASS/FAIL messages.
+
+## What I built
+
+I created a script called `service-check.sh` that checks whether important commands are installed, whether the current folder is a Git repository, and whether basic internet connectivity works.
+
+## DevOps connection
+
+Exit codes are important in DevOps because CI/CD pipelines, deployment scripts, monitoring checks, and automation tools rely on success/failure results to decide what happens next.
+
+## Commands practiced
+
+- `echo $?`
+- `exit 0`
+- `exit 1`
+- `command -v git`
+- `command -v curl`
+- `git status`
+- `ping -c 1 google.com`
+- `curl -I https://example.com`
+- `chmod +x scripts/service-check.sh`
+- `./scripts/service-check.sh`
+- `git status`
+- `git add`
+- `git commit`
+- `git push`
+
+## Session 15 — Bash Exit Codes and Error Handling
+
+In this session, I learned how Bash uses exit codes to show whether commands succeed or fail. I practiced checking `$?`, using `exit 0` and `exit 1`, and printing clear PASS/FAIL messages.
+
+I created a script called `service-check.sh` that checks whether important commands are installed, whether the current folder is a Git repository, and whether basic internet connectivity works.
+
+DevOps connection:
+Exit codes are important in DevOps because CI/CD pipelines, deployment scripts, monitoring checks, and automation tools rely on success/failure results to decide what happens next.
