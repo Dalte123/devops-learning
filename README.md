@@ -502,6 +502,7 @@ git status
 git add
 git commit
 git push
+```
 
 ## Session 14 — Bash Loops, Repeated Checks, and Simple Automation
 
