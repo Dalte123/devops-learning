@@ -25,6 +25,8 @@ My goal is to become employable in DevOps / Cloud / Infrastructure by building p
 | Session 13 | Bash Functions, Reusable Code, and Script Cleanup | Completed |
 | Session 14 | Bash Loops, Repeated Checks, and Simple Automation | Completed |
 | Session 15 | Bash Exit Codes, Script Results, and Error Handling | Completed |
+| Session 16 |Bash Script Flags and DevOps Check Tool |Completed |
+
 ---
 
 ## Session Summaries
@@ -564,3 +566,32 @@ I created a script called `service-check.sh` that checks whether important comma
 
 DevOps connection:
 Exit codes are important in DevOps because CI/CD pipelines, deployment scripts, monitoring checks, and automation tools rely on success/failure results to decide what happens next.
+
+
+## Session 16 — Bash Script Flags and DevOps Check Tool
+``` markdown
+
+In this session, I learned how to make Bash scripts behave more like real command-line tools by using flags such as `--help`, `--all`, `--git`, `--internet`, `--disk`, `--memory`, `--verbose`, and `--quiet`.
+
+I created a script called `devops-check.sh` that runs basic DevOps checks and prints clear PASS/FAIL output.
+
+DevOps connection:
+
+Command-line flags make scripts easier to use, reuse, and understand. This is important because DevOps engineers often build internal tools for health checks, troubleshooting, CI/CD, and automation.
+
+Commands practiced:
+
+```bash
+./scripts/devops-check.sh --help
+./scripts/devops-check.sh --all
+./scripts/devops-check.sh --git
+./scripts/devops-check.sh --internet
+./scripts/devops-check.sh --disk
+./scripts/devops-check.sh --memory
+./scripts/devops-check.sh --verbose --all
+./scripts/devops-check.sh --quiet --all
+chmod +x scripts/devops-check.sh
+git status
+git add
+git commit
+git push
